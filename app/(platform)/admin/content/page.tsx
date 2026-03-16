@@ -1,0 +1,1 @@
+export default function Page(){return <div className="card"><h2 className="font-semibold">Gestione content</h2><p className="mt-2 text-sm text-slate-600">Interfaccia MVP per creare, modificare e monitorare content.</p></div>}

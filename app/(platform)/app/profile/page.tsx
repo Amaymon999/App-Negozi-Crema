@@ -1,0 +1,1 @@
+export default function ProfilePage(){return <div className="card"><h2 className="font-semibold">Profilo Utente</h2><p className="mt-2 text-sm text-slate-600">utente@cremacentro.it</p><p className="text-sm text-slate-600">Preferenze: Fashion, Food, Eventi serali</p></div>}

@@ -1,0 +1,1 @@
+export default function ShopStats(){return <div className="card"><h2 className="font-semibold">Statistiche base</h2><ul className="mt-2 space-y-1 text-sm text-slate-600"><li>Check-in: 124</li><li>Punti generati: 980</li><li>Redemption impattate: 23</li></ul></div>}
