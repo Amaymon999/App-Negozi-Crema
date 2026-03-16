@@ -1,0 +1,1 @@
+export default function ShopPromos(){return <div className="card"><h2 className="font-semibold">Gestione promo</h2><p className="text-sm text-slate-600">Promo attiva: -10% nuova collezione.</p></div>}

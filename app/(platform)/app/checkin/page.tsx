@@ -1,0 +1,1 @@
+export default function CheckinPage(){return <div className="card"><h2 className="font-semibold">Check-in QR</h2><p className="mt-2 text-sm text-slate-600">Cooldown anti-abuso: 15 minuti per negozio.</p></div>}
