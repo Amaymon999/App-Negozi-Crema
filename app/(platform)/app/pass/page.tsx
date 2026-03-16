@@ -1,0 +1,1 @@
+export default function PassPage(){return <div className="card"><h2 className="font-semibold">Digital Pass</h2><p className="mt-2 text-sm text-slate-600">Punti disponibili: 180</p><p className="text-sm text-slate-600">Timbri: 4 · Ultimo check-in: Boutique Duomo</p></div>}

@@ -1,0 +1,1 @@
+export default function Page(){return <div className="card"><h2 className="font-semibold">Gestione categories</h2><p className="mt-2 text-sm text-slate-600">Interfaccia MVP per creare, modificare e monitorare categories.</p></div>}

@@ -1,0 +1,1 @@
+export default function ShopCheckins(){return <div className="card"><h2 className="font-semibold">Validazione check-in</h2><p className="text-sm text-slate-600">Strumento rapido per convalidare QR e redemption.</p></div>}

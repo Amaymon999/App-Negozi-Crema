@@ -1,0 +1,1 @@
+export default function HistoryPage(){return <div className="card"><h2 className="font-semibold">Storico attività</h2><ul className="mt-2 space-y-1 text-sm text-slate-600"><li>Check-in · Gusto Crema</li><li>Missione completata · Fashion Crawl</li><li>Reward riscattato · Coupon Centro 10€</li></ul></div>}
