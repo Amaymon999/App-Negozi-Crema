@@ -1,5 +1,4 @@
-'use client';
-
+import Image from 'next/image';
 import { shops } from '@/lib/demo-data';
 
 export function MapPreview() {
@@ -18,7 +17,7 @@ export function MapPreview() {
 
   return (
     <div className="card overflow-hidden p-0">
-      <img src={src} alt="Mappa del centro di Crema" className="h-64 w-full object-cover" />
+      <Image src={src} alt="Mappa del centro di Crema" width={900} height={420} className="h-64 w-full object-cover" unoptimized />
     </div>
   );
 }

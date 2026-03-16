@@ -5,8 +5,8 @@ Deployable MVP for a civic-commerce SaaS pilot in Crema.
 ## Phase 1 — Architecture
 
 ### Stack
-- Next.js 14 App Router + TypeScript + Tailwind
-- Supabase (Auth, Postgres, RLS, Storage-ready)
+- Next.js 14 App Router (patched via semver) + TypeScript + Tailwind
+- Supabase (Auth, Postgres, RLS, Storage-ready) + @supabase/ssr
 - Mapbox static/interactive preview (token-based)
 - Vercel-ready
 
@@ -97,4 +97,21 @@ NEXT_PUBLIC_MAPBOX_TOKEN=your_mapbox_token
 2. Import project in Vercel.
 3. Set env vars from above.
 4. Build command: `npm run build`, output: default Next.js.
+
+
+## Troubleshooting deployment
+
+If GitHub PR shows **"This branch has conflicts that must be resolved"**, your feature branch is behind `main`:
+
+```bash
+git fetch origin
+git checkout <your-pr-branch>
+git merge origin/main
+# resolve conflicts in listed files
+git add .
+git commit -m "chore: resolve merge conflicts with main"
+git push
+```
+
+If Vercel fails during prerender on `/` with app-router errors, this MVP forces dynamic rendering for the landing route (`app/(public)/page.tsx`) to bypass static prerender instability in some Next 14 patch combinations.
 
