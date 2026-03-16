@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { Hero } from '@/components/landing/hero';
 import { Badge } from '@/components/ui/badge';
 import { shops, missions, rewards, events } from '@/lib/demo-data';

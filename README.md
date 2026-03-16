@@ -98,3 +98,20 @@ NEXT_PUBLIC_MAPBOX_TOKEN=your_mapbox_token
 3. Set env vars from above.
 4. Build command: `npm run build`, output: default Next.js.
 
+
+## Troubleshooting deployment
+
+If GitHub PR shows **"This branch has conflicts that must be resolved"**, your feature branch is behind `main`:
+
+```bash
+git fetch origin
+git checkout <your-pr-branch>
+git merge origin/main
+# resolve conflicts in listed files
+git add .
+git commit -m "chore: resolve merge conflicts with main"
+git push
+```
+
+If Vercel fails during prerender on `/` with app-router errors, this MVP forces dynamic rendering for the landing route (`app/(public)/page.tsx`) to bypass static prerender instability in some Next 14 patch combinations.
+
